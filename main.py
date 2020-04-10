@@ -58,9 +58,7 @@ def RepresentsInt(s):
 if __name__ == '__main__':
 
 	try:
-		while True:
-			main()
-		
+		main()
 	except KeyboardInterrupt as e:
 		print("[!] Exiting Program")
 		sys.exit()
