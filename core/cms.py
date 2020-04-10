@@ -67,6 +67,9 @@ class _cms():
 		if 'laravel_session' in str(laravel):
 			print(self.clr.green("[+] [Laravel Framework] => {}".format(url)))
 			self.save(url, "Laravel.txt")
+		elif '=ey' in str(laravel['set-cookie']):
+			print(self.clr.green("[+] [Laravel Framework] => {}".format(url)))
+			self.save(url, "Laravel.txt")
 		else:
 			print(self.clr.red("[-] [NOT LARAVEL] {} ".format(url)))
 

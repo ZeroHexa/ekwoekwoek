@@ -1,4 +1,4 @@
-import sys,os.path,time,warnings,pyfiglet,os
+import sys,os.path,time,warnings,pyfiglet,os,requests
 import re
 from multiprocessing.dummy import Pool	
 from time import time as timer
@@ -10,7 +10,6 @@ warnings.simplefilter('ignore',InsecureRequestWarning)
 
 cms = _cms()
 clr = warna()
-
 
 
 def main():
