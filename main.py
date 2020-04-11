@@ -34,6 +34,8 @@ def main():
 			start = timer()
 			ThreadPool = Pool(int(c))
 			Threads = ThreadPool.map(cms._execute, victim)
+			ThreadPool.close()
+			ThreadPool.join()
 			print('TIME TAKE: ' + str(timer() - start) + ' S')
 		except Exception as e:
 			pass
